@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongArithmetic", "LongArithmetic\LongArithmetic.csproj", "{15B3E193-02D5-4550-BCD6-040FF0D5C2E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongArithmetic", "LongArithmetic\LongArithmetic.csproj", "{15B3E193-02D5-4550-BCD6-040FF0D5C2E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumber", "ComplexNumber\ComplexNumber.csproj", "{DCB68E9A-3E39-42BB-A949-0EF7768DDD5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexNumber", "ComplexNumber\ComplexNumber.csproj", "{DCB68E9A-3E39-42BB-A949-0EF7768DDD5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{E092F621-4F67-4A6F-994F-10E8BBF92CA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{E092F621-4F67-4A6F-994F-10E8BBF92CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{75D6B1C3-98BA-4B32-AC9D-0DED6C11BDE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "Sorting\Sorting.csproj", "{75D6B1C3-98BA-4B32-AC9D-0DED6C11BDE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{EC417CC2-5670-4537-BEA3-5518C6008B44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trees", "Trees\Trees.csproj", "{EC417CC2-5670-4537-BEA3-5518C6008B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searching", "Searching\Searching.csproj", "{CCBFA55D-7FC2-4760-92D7-F9FD80B498A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Searching", "Searching\Searching.csproj", "{CCBFA55D-7FC2-4760-92D7-F9FD80B498A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SternsMath", "SternsMath\SternsMath.csproj", "{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{CCBFA55D-7FC2-4760-92D7-F9FD80B498A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCBFA55D-7FC2-4760-92D7-F9FD80B498A5}.Release|x64.ActiveCfg = Release|Any CPU
 		{CCBFA55D-7FC2-4760-92D7-F9FD80B498A5}.Release|x64.Build.0 = Release|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Debug|x64.Build.0 = Debug|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Release|x64.ActiveCfg = Release|Any CPU
+		{8887C9F7-600C-4AD6-BAC5-B7D4A9BCB9CC}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

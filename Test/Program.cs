@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using SternsMath.Models;
 
 namespace Test
 {
@@ -11,6 +12,18 @@ namespace Test
         static void Main(string[] args)
         {
 
+        }
+
+        private static void TestMath()
+        {
+            Console.WriteLine("Введите число:");
+            //var num = Convert.ToUInt64(Console.ReadLine());
+
+            var num = ulong.MaxValue;
+
+            var res = num.GetTrialDivision();
+
+            Console.WriteLine($@"Простые множители: {num} = {string.Join("*", res)}");
         }
 
         private static void TestSearching()
