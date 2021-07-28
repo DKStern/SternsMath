@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using SternsMath.Models.Math;
 
 namespace Test
 {
@@ -12,9 +13,9 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            TestEncryption();
+            TestMath();
         }
-
+        
         private static async void TestEncryption()
         {
             string str = "Выяснению, кто же и кого травмировал, предшествовал душераздирающий конфликт в Мурине. Местная жительница поставила детскую коляску на газон в соседнем дворе — и лишилась ногтя. Всё потому, что это не понравилось даме, которая считает двор «своим» и изгоняет чужаков.";
@@ -40,13 +41,16 @@ namespace Test
         private static void TestMath()
         {
             Console.WriteLine("Введите число:");
-            //var num = Convert.ToUInt64(Console.ReadLine());
-
-            var num = ulong.MaxValue;
-
+            var num = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Введите степень:");
+            var pow = Convert.ToInt32(Console.ReadLine());
+            
             var res = num.GetTrialDivision();
 
             Console.WriteLine($@"Простые множители: {num} = {string.Join("*", res)}");
+
+            var result = num.QuickPower(pow);
+            Console.WriteLine($@"{num}^{pow} = {result}");
         }
 
         private static void TestSearching()

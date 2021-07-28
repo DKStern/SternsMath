@@ -23,5 +23,25 @@ namespace SternsMath.Models
 
             return divides;
         }
+
+        public static List<long> GetTrialDivision(this long n)
+        {
+            var divides = new List<long>();
+            long div = 2;
+            while (n > 1)
+            {
+                if (n % div == 0)
+                {
+                    divides.Add(div);
+                    n /= div;
+                }
+                else
+                {
+                    div++;
+                }
+            }
+
+            return divides;
+        }
     }
 }
