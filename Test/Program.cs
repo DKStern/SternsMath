@@ -1,9 +1,10 @@
 ﻿using Searching.Searchings;
+using SternsMath.Models;
+using SternsMath.Models.Encryption;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using SternsMath.Models;
 
 namespace Test
 {
@@ -11,7 +12,29 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            TestEncryption();
+        }
 
+        private static async void TestEncryption()
+        {
+            string str = "Выяснению, кто же и кого травмировал, предшествовал душераздирающий конфликт в Мурине. Местная жительница поставила детскую коляску на газон в соседнем дворе — и лишилась ногтя. Всё потому, что это не понравилось даме, которая считает двор «своим» и изгоняет чужаков.";
+            Console.WriteLine(str);
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            var res = str.XOREncryptDecrypt("Привет");
+            sw.Stop();
+            Console.WriteLine(res);
+            Console.WriteLine(sw.Elapsed);
+
+            sw.Restart();
+            res = await str.XOREncryptDecryptAsync("Привет");
+            sw.Stop();
+            Console.WriteLine(res);
+            Console.WriteLine(sw.Elapsed);
+
+            res = res.XOREncryptDecrypt("Привет");
+            Console.WriteLine(res);
         }
 
         private static void TestMath()
