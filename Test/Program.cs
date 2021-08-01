@@ -1,11 +1,12 @@
 ﻿using Searching.Searchings;
 using SternsMath.Models;
 using SternsMath.Models.Encryption;
+using SternsMath.Models.Math;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Numerics;
 using System.Threading.Tasks;
-using SternsMath.Models.Math;
 
 namespace Test
 {
@@ -13,7 +14,7 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            TestMath();
+
         }
         
         private static async void TestEncryption()
