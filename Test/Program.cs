@@ -1,11 +1,11 @@
-﻿using Searching.Searchings;
-using SternsMath.Models;
+﻿using SternsMath.Models;
 using SternsMath.Models.Encryption;
 using SternsMath.Models.Math;
+using SternsMath.Models.Searchings;
+using SternsMath.Models.Sortings;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Numerics;
 using System.Threading.Tasks;
 
 namespace Test
@@ -71,7 +71,7 @@ namespace Test
             var random = new Random();
             var find = list[random.Next(0, 11)];
 
-            var array = Sorting.Sortings.Sorting.QuickSort(list.ToArray());
+            var array = Sorting.QuickSort(list.ToArray());
 
             var linear = new Task(() =>
             {
@@ -128,7 +128,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.RandomSort(array);
+                var res = Sorting.RandomSort(array);
                 watch.Stop();
                 //dic.Add("Случайная", res);
                 Console.WriteLine($@"Случайная: {watch.Elapsed}");
@@ -139,7 +139,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.BubbleSort(array);
+                var res = Sorting.BubbleSort(array);
                 watch.Stop();
                 //dic.Add("Пузырьком", res);
                 Console.WriteLine($@"Пузырьком: {watch.Elapsed}");
@@ -150,7 +150,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.ShakerSort(array);
+                var res = Sorting.ShakerSort(array);
                 watch.Stop();
                 //dic.Add("Перемешиванием", res);
                 Console.WriteLine($@"Перемешиванием: {watch.Elapsed}");
@@ -161,7 +161,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.InsertionSort(array);
+                var res = Sorting.InsertionSort(array);
                 watch.Stop();
                 //dic.Add("Вставками", res);
                 Console.WriteLine($@"Вставками: {watch.Elapsed}");
@@ -172,7 +172,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.StoogeSort(array);
+                var res = Sorting.StoogeSort(array);
                 watch.Stop();
                 //dic.Add("По частям", res);
                 Console.WriteLine($@"По частям: {watch.Elapsed}");
@@ -183,7 +183,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.PancakeSort(array);
+                var res = Sorting.PancakeSort(array);
                 watch.Stop();
                 //dic.Add("Блинная", res);
                 Console.WriteLine($@"Блинная: {watch.Elapsed}");
@@ -194,7 +194,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.ShellSort(array);
+                var res = Sorting.ShellSort(array);
                 watch.Stop();
                 //dic.Add("Шелла", res);
                 Console.WriteLine($@"Шелла: {watch.Elapsed}");
@@ -205,7 +205,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.MergeSort(array);
+                var res = Sorting.MergeSort(array);
                 watch.Stop();
                 //dic.Add("Слиянием", res);
                 Console.WriteLine($@"Слиянием: {watch.Elapsed}");
@@ -216,7 +216,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.SelectionSort(array);
+                var res = Sorting.SelectionSort(array);
                 watch.Stop();
                 //dic.Add("Выбором", res);
                 Console.WriteLine($@"Выбором: {watch.Elapsed}");
@@ -227,7 +227,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.QuickSort(array);
+                var res = Sorting.QuickSort(array);
                 watch.Stop();
                 //dic.Add("Быстрая", res);
                 Console.WriteLine($@"Быстрая: {watch.Elapsed}");
@@ -238,7 +238,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.GnomeSort(array);
+                var res = Sorting.GnomeSort(array);
                 watch.Stop();
                 //dic.Add("Гномья", res);
                 Console.WriteLine($@"Гномья: {watch.Elapsed}");
@@ -249,7 +249,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.TreeSort(array);
+                var res = Sorting.TreeSort(array);
                 watch.Stop();
                 //dic.Add("Деревом", res);
                 Console.WriteLine($@"Деревом: {watch.Elapsed}");
@@ -260,7 +260,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.CombSort(array);
+                var res = Sorting.CombSort(array);
                 watch.Stop();
                 //dic.Add("Расчёсткой", res);
                 Console.WriteLine($@"Расчёсткой: {watch.Elapsed}");
@@ -271,7 +271,7 @@ namespace Test
             {
                 var watch = new Stopwatch();
                 watch.Start();
-                var res = Sorting.Sortings.Sorting.BasicCountingSort(array);
+                var res = Sorting.BasicCountingSort(array);
                 watch.Stop();
                 //dic.Add("Подсчётом", res);
                 Console.WriteLine($@"Подсчётом: {watch.Elapsed}");

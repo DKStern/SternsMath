@@ -20,7 +20,7 @@ namespace SternsMath.Models.Searchings
         /// <summary>
         /// Линейный поиск
         /// </summary>
-        public static int LinearSearch<T>(this T[] a, T searchedValue) where T : struct, IEquatable<T>
+        public static int LinearSearch<T>(this T[] a, T searchedValue) where T : IEquatable<T>
         {
             CheckArray(a);
 
