@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using SternsMath.Models.NumberSystems;
 
 namespace Test
 {
@@ -14,7 +15,12 @@ namespace Test
     {
         static void Main(string[] args)
         {
-
+            var a = 255;
+            for (int i = 2; i <= 16; i++)
+            {
+                var num = a.ToBase(i);
+                Console.WriteLine($@"{i:00}: {num}");
+            }
         }
         
         private static async void TestEncryption()
